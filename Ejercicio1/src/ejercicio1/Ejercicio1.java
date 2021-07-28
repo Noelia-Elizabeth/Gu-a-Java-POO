@@ -30,6 +30,7 @@ public class Ejercicio1 {
     }
     
     public static void mostrarLibro(Libro libro1) {
+        System.out.println(" ");
         System.out.println("Libro: " + libro1.titulo);
         System.out.println("Autor: " + libro1.autor);
         System.out.println("ISBN: " + libro1.isbn);
