@@ -28,13 +28,13 @@ public class Ejercicio6 {
         
         //Probamos los métodos
         
-        cafetera1.agregarCafe(150.0);
-        System.out.println("∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻");
-        //cafetera1.servirTaza(50);
-        System.out.println("∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻");
-        //cafetera1.servirTaza(150);
-        System.out.println("∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻");
-        //cafetera1.agregarCafe(500);
+        cafetera1.agregarCafe(150);
+        System.out.println("∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻");
+        cafetera1.servirTaza(50);
+        System.out.println("∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻");
+        cafetera1.servirTaza(150);
+        System.out.println("∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻");
+        cafetera1.agregarCafe(500);
         
         
     }
