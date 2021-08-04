@@ -30,7 +30,7 @@ public class Ejercicio11 {
         System.out.println("Ingrese el año: ");
         anio = scanner.nextInt();
         
-        Date fecha = new Date (anio, mes, dia);
+        Date fecha = new Date (anio, mes - 1, dia);
         System.out.println("La fecha ingresada es: " + fecha);
         
         System.out.println("ϟϟϟϟϟϟϟϟϟϟϟϟϟϟϟϟϟϟϟϟϟϟϟϟϟϟϟϟϟϟϟϟϟϟϟϟϟϟϟϟϟϟϟϟϟϟϟϟ");
