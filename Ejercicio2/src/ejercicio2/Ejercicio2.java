@@ -8,7 +8,11 @@ de tipo real. A continuación, se deben crear los siguientes métodos:
     d) Método area(): para calcular el área de la circunferencia (Area = π ∗ radio!).
     e) Método perimetro(): para calcular el perímetro (Perimetro = 2 ∗ π ∗ radio).
  */
+
+// Dejo comentada la resolución original.
 package ejercicio2;
+
+import ejercicio2.servicios.ServicioCircunferencia;
 
 public class Ejercicio2 {
 
@@ -20,12 +24,17 @@ public class Ejercicio2 {
         System.out.println("※Vamos a crear una circunferencia※");
         System.out.println("※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※");
         
-        Circunferencia C1 = new Circunferencia(0.0);
+//        Circunferencia C1 = new Circunferencia(0.0);
         
-        C1.crearCircunferencia();
-        System.out.println("El área de su circunferencia es: " + C1.area());
-        System.out.println("El perímetro de su circunferencia es: " + C1.perimetro());
+//        C1.crearCircunferencia();
+//        System.out.println("El área de su circunferencia es: " + C1.area());
+//        System.out.println("El perímetro de su circunferencia es: " + C1.perimetro());
         
+
+        ServicioCircunferencia circ = new ServicioCircunferencia();
+        Circunferencia circunferencia = circ.crearCircunferencia();
+        System.out.println("El área de su circunferencia es: " + circ.area(circunferencia));
+        System.out.println("El perímetro de su circunferencia es: " + circ.perimetro(circunferencia));
     }
     
 }

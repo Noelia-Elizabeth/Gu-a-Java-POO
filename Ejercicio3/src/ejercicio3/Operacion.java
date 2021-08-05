@@ -32,36 +32,36 @@ public class Operacion {
         this.numero2 = numero2;
     }
     
-    public void crearOperacion () {
-        Scanner scanner = new Scanner(System.in);
-        this.numero1 = scanner.nextDouble();
-        this.numero2 = scanner.nextDouble();
-    }
+//    public void crearOperacion () {
+//        Scanner scanner = new Scanner(System.in);
+//        this.numero1 = scanner.nextDouble();
+//        this.numero2 = scanner.nextDouble();
+//    }
     
-    public Double sumar (){
-        return this.numero1 + this.numero2;
-    }
+//    public Double sumar (){
+//        return this.numero1 + this.numero2;
+//    }
+//    
+//    public Double restar () {
+//        return this.numero1 - this.numero2;
+//    }
     
-    public Double restar () {
-        return this.numero1 - this.numero2;
-    }
+//    public Double multiplicar () {
+//        if (this.numero1 != 0 && this.numero2 != 0) {
+//            return this.numero1 * this.numero2;
+//        } else {
+//            System.out.println("Está prohibida la multiplicación por 0");
+//            return 0.0;
+//        }
+//    }
     
-    public Double multiplicar () {
-        if (this.numero1 != 0 && this.numero2 != 0) {
-            return this.numero1 * this.numero2;
-        } else {
-            System.out.println("Está prohibida la multiplicación por 0");
-            return 0.0;
-        }
-    }
-    
-    public Double dividr () {
-        if (this.numero2 != 0) {
-            return this.numero1 * this.numero2;
-        } else {
-            System.out.println("Está prohibida la división por 0");
-            return 0.0;
-        }
-    }
+//    public Double dividr () {
+//        if (this.numero2 != 0) {
+//            return this.numero1 * this.numero2;
+//        } else {
+//            System.out.println("Está prohibida la división por 0");
+//            return 0.0;
+//        }
+//    }
     
 }

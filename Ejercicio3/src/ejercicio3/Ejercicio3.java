@@ -15,13 +15,23 @@ A continuación, se deben crear los siguientes métodos:
        el método devuelve 0 y se le informa al usuario el error se le informa al usuario. Si no,
        se hace la división y se devuelve el resultado al main.
  */
+
+// Dejo comentada la resolución original.
 package ejercicio3;
+
+import ejercicio3.servicios.ServicioOperacion;
 
 public class Ejercicio3 {
 
     public static void main(String[] args) {
         
+        ServicioOperacion opera = new ServicioOperacion();
         
+        Operacion operacion = opera.crearOperacion();
+        System.out.println("Suma: " + opera.sumar(operacion));
+        System.out.println("Resta: " + opera.restar(operacion));
+        System.out.println("Multiplicación: " + opera.multiplicar(operacion));
+        System.out.println("División: " + opera.dividir(operacion));
         
         
     }

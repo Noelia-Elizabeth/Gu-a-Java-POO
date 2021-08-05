@@ -20,20 +20,20 @@ public class Circunferencia {
         this.radio = radio;
     }
     
-    public void crearCircunferencia () {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Ingrese el radio: ");
-        this.radio = scanner.nextDouble();
-    }
+//    public void crearCircunferencia () {
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.println("Ingrese el radio: ");
+//        this.radio = scanner.nextDouble();
+//    }
     
-    public Double area () {
-        Double area = Math.PI * this.radio * this.radio;
-        return area;
-    }
+//    public Double area () {
+//        Double area = Math.PI * this.radio * this.radio;
+//        return area;
+//    }
     
-    public Double perimetro () {
-        Double perimetro = 2 * Math.PI * this.radio;
-        return perimetro;
-    }
+//    public Double perimetro () {
+//        Double perimetro = 2 * Math.PI * this.radio;
+//        return perimetro;
+//    }
     
 }
