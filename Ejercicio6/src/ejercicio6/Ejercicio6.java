@@ -15,7 +15,11 @@ Implemente, al menos, los siguientes métodos:
     • Método agregarCafe(int): se le pide al usuario una cantidad de café, el método lo recibe y 
       se añade a la cafetera la cantidad de café indicada.
  */
+
+//Dejo comentada la solución original.
 package ejercicio6;
+
+import ejercicio6.servicios.ServicioCafetera;
 
 public class Ejercicio6 {
 
@@ -23,19 +27,32 @@ public class Ejercicio6 {
         
         //Creamos una cafetera
         
-        Cafetera cafetera1 = new Cafetera();
-        cafetera1.setCapacidadMaxima(200.0);
+//        Cafetera cafetera1 = new Cafetera();
+//        cafetera1.setCapacidadMaxima(200.0);
+//        
+//        //Probamos los métodos
+//        
+//        cafetera1.agregarCafe(150);
+//        System.out.println("∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻");
+//        cafetera1.servirTaza(50);
+//        System.out.println("∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻");
+//        cafetera1.servirTaza(150);
+//        System.out.println("∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻");
+//        cafetera1.agregarCafe(500);
+        
+        //Creamos una cafetera y su servicio
+        ServicioCafetera servicioCaf = new ServicioCafetera();
+        Cafetera cafetera1 = new Cafetera(500.0, 0.0);
         
         //Probamos los métodos
-        
-        cafetera1.agregarCafe(150);
+        servicioCaf.agregarCafe(cafetera1, 150);
         System.out.println("∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻");
-        cafetera1.servirTaza(50);
+        servicioCaf.llenarCafetera(cafetera1);
         System.out.println("∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻");
-        cafetera1.servirTaza(150);
+        servicioCaf.servirTaza(cafetera1, 23);
         System.out.println("∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻");
-        cafetera1.agregarCafe(500);
-        
+        servicioCaf.servirTaza(cafetera1, 720);
+        System.out.println("∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻∻");
         
     }
     

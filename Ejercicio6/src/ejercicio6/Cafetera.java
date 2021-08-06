@@ -30,36 +30,36 @@ public class Cafetera {
         this.cantidadActual = cantidadActual;
     }
     
-    public void llenarCafetera () {
-        this.cantidadActual = this.capacidadMaxima;
-        System.out.println("La cafetera tiene: " + this.cantidadActual);
-    }
+//    public void llenarCafetera () {
+//        this.cantidadActual = this.capacidadMaxima;
+//        System.out.println("La cafetera tiene: " + this.cantidadActual);
+//    }
     
-    public void servirTaza(int tamanioTaza){
-        
-        if (this.cantidadActual >= tamanioTaza) {
-            this.cantidadActual -= tamanioTaza;
-            System.out.println("Taza llena.");
-        } else {
-            System.out.println("No alcanzaba; solo se pudo colocar: " + this.cantidadActual);
-            this.cantidadActual = 0.0;
-        }        
-    }
-    
-    public void vaciarCafetera() {
-        System.out.println("Cafetera vaciada.");
-        this.cantidadActual = 0.0;
-    }
-    
-    public void agregarCafe(int cantidadCafe) {
-        
-        if (this.capacidadMaxima >= cantidadCafe + this.cantidadActual) {
-            System.out.println("Se agregan " + cantidadCafe + " de café a la cafetera.");
-            this.cantidadActual += cantidadCafe;
-        } else {
-            System.out.println("Cafetera llena.");
-            this.cantidadActual = this.capacidadMaxima;
-        }
-        
-    }
+//    public void servirTaza(int tamanioTaza){
+//        
+//        if (this.cantidadActual >= tamanioTaza) {
+//            this.cantidadActual -= tamanioTaza;
+//            System.out.println("Taza llena.");
+//        } else {
+//            System.out.println("No alcanzaba; solo se pudo colocar: " + this.cantidadActual);
+//            this.cantidadActual = 0.0;
+//        }        
+//    }
+
+//    public void vaciarCafetera() {
+//        System.out.println("Cafetera vaciada.");
+//        this.cantidadActual = 0.0;
+//    }
+
+//    public void agregarCafe(int cantidadCafe) {
+//        
+//        if (this.capacidadMaxima >= cantidadCafe + this.cantidadActual) {
+//            System.out.println("Se agregan " + cantidadCafe + " de café a la cafetera.");
+//            this.cantidadActual += cantidadCafe;
+//        } else {
+//            System.out.println("Cafetera llena.");
+//            this.cantidadActual = this.capacidadMaxima;
+//        }
+//        
+//    }
 }
