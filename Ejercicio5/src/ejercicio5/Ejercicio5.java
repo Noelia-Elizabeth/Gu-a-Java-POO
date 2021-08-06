@@ -12,25 +12,38 @@ numeroCuenta (entero), el DNI del cliente (entero largo), el saldo actual. Las o
 • Método consultarSaldo(): permitirá consultar el saldo disponible en la cuenta.
 • Método consultarDatos(): permitirá mostrar todos los datos de la cuenta
  */
+
+//Dejo comentada la solución original.
 package ejercicio5;
+
+import ejercicio5.servicios.ServicioCuentaBancaria;
 
 public class Ejercicio5 {
 
     public static void main(String[] args) {
         
-        CuentaBancaria cuenta1 = new CuentaBancaria(000,0,0.0);
+//        CuentaBancaria cuenta1 = new CuentaBancaria(000,0,0.0);
+//        
+//        //Creación de la cuenta
+//        cuenta1.crearCuenta();
+//        
+//       // Prueba de los métodos
+//        System.out.println("∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿");
+//        System.out.println("Los datos de su cuenta: ");
+//        cuenta1.consultarDatos();
+//        System.out.println("∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿");
+//        System.out.println("Consulta del saldo: ");
+//        cuenta1.consultarSaldo();
+//        System.out.println("∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿");
+
+        ServicioCuentaBancaria serviciocb = new ServicioCuentaBancaria();
+        CuentaBancaria cuenta1 = serviciocb.crearCuenta();
         
-        //Creación de la cuenta
-        cuenta1.crearCuenta();
-        
-       // Prueba de los métodos
-        System.out.println("∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿");
-        System.out.println("Los datos de su cuenta: ");
-        cuenta1.consultarDatos();
-        System.out.println("∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿");
-        System.out.println("Consulta del saldo: ");
-        cuenta1.consultarSaldo();
-        System.out.println("∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿");
+        serviciocb.consultarDatos(cuenta1);
+        serviciocb.consultarSaldo(cuenta1);
+        serviciocb.ingresarDinero(cuenta1, 200.0);
+        serviciocb.extraccionRapida(cuenta1, 50.0);
+        serviciocb.retirarDinero(cuenta1, 100.0);
         
     }
     
