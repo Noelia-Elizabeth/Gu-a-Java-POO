@@ -9,15 +9,28 @@ los métodos getters, setters y constructores correspondientes.
 
 Superficie = base * altura / Perímetro = (base + altura) * 2.
  */
+
+//Dejo comentada la solución original.
 package ejercicio4;
+
+import ejercicio4.servicios.ServicioRectangulo;
 
 public class Ejercicio4 {
 
     public static void main(String[] args) {
         
-        Rectangulo R1 = new Rectangulo (1.0,1.0);
+        //Rectangulo R1 = new Rectangulo (1.0,1.0);
         
-        R1.dibujarRectángulo();
+        //R1.dibujarRectángulo();
+        
+        ServicioRectangulo serviciorect = new ServicioRectangulo();
+        
+        Rectangulo rectangulo = serviciorect.crearRectangulo();
+        
+        System.out.println("La perímetro del retángulo es: " + serviciorect.perimetro(rectangulo));
+        System.out.println("El superficie del retángulo es: " + serviciorect.superficie(rectangulo));
+        
+        serviciorect.dibujarRectángulo(rectangulo);
         
     }
     
