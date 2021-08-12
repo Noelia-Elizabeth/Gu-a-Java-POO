@@ -61,7 +61,7 @@ public class Ejercicio8 {
 
         System.out.println(" ");
         System.out.println("Ingrese una letra para las letra a:");
-        frase1.unirFrases(scanner.nextLine());
+        frase1.reemplazar(scanner.nextLine());
         
         System.out.println(" ");
         System.out.println("Ingrese una letra para buscar en la frase original:");

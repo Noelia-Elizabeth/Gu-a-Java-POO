@@ -87,13 +87,8 @@ public class Cadena {
 
     }
     
-    //Revisar
     public void reemplazar (String letra) {
-        String resultado = "";
-        for (int i = 0; i < this.longitud; i++) {
-            resultado.concat(this.frase.substring(i,i+1).replace("a", letra));
-        }
-        System.out.println("◎ La nueva frase es: " + resultado);
+        System.out.println("La frase sin 'a': " + this.frase.replace("a", letra));
     }
     
     public Boolean contiene (String letra) {
