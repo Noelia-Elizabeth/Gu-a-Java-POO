@@ -26,8 +26,12 @@ public class Ejercicio10 {
         System.out.println("El primer arreglo es: " + Arrays.toString(A));
         
         Arrays.sort(A);
-        B = Arrays.copyOf(A, 10);
-        //Arrays.fill(B, 11, 19, 0.5); REVISAR
+        for (int i = 0; i < 10; i++) {
+            B[i]=A[i];
+        }
+        for (int i = 9; i < 20; i++) {
+            B[i]=0.5;
+        }
         
         System.out.println("El arreglo A ordenado: " + Arrays.toString(A));
         System.out.println("El arreblo B: " + Arrays.toString(B));
